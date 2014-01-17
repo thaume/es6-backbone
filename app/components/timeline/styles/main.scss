@@ -1,0 +1,71 @@
+// This will be concatenated at runtime to main.less, as we have declared this component as part of the "main" package
+// in the file /config/packages.js
+
+.timeline {
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-bottom: 1px dotted #999;
+}
+
+.tweet {
+  border: 1px solid #e8e8e8;
+  border-width: 0 0 1px;
+  padding: 0 12px 12px 0;
+  margin-bottom: 20px;
+}
+
+.media, .media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.media-body {
+  margin-left: 55px;
+}
+
+.tweet-handle {
+  color: #999999;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+p.tweet-content {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.date {
+  color: #999999;
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+
+.tweet-utils {
+  font-size: 11px;
+}
+
+.tweet .avatar {
+  float: left;
+  border-radius: 5px;
+}
+
+.btn-loading {
+  margin: 10px 0 0 0;
+  visibility: hidden;
+}
+
+.btn-loading.show {
+  visibility: visible;
+}
+
+.bx-alert {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .media-body {
+    margin-left: 5px;
+  }
+}
+

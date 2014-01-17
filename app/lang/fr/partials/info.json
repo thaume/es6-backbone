@@ -1,0 +1,11 @@
+{
+  "setup_1": [
+    "To setup this demo, you need to login to <a href='http://dev.twitter.com'>dev.twitter.com</a> and register",
+    "this as an application (any name will do)."
+  ],
+  "setup_2": [
+    "Next note down your <strong>Consumer key</strong>, <strong>Consumer secret</strong> and ",
+    "your <strong>Twitter handle</strong>"
+  ],
+  "setup_3": "Enter this into your <strong>Viaduct</strong> application config, at <code>config / environments / configurations / development.json</code>"
+}

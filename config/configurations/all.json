@@ -1,0 +1,4 @@
+{
+  "forbidden_route_patterns": ["fonts", "images", "lang", "scripts", "styles"],
+  "external_components_dir": "bower_components"
+}

@@ -1,0 +1,9 @@
+{
+  "fetch": "Fetch older tweets",
+  "error": "An error occurred loading your Twitter feed",
+  "reply": "reply",
+  "retweet": "retweet",
+  "favorite": "favorite",
+  "loading": "Loading ...",
+  "finished": "End of timeline"
+}

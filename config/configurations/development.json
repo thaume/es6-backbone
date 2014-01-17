@@ -1,0 +1,8 @@
+{
+  "redis_host": "localhost",
+  "redis_port": "6379",
+
+  "twitter_screen_name": "thaume",
+  "twitter_consumer_key": "bA8B63cmu7Ygf2u6L5k7g",
+  "twitter_consumer_secret": "uE0Ik7GLmRpdo47hAwQoLMIkpVyaKiMFtvZfqmTFbwc"
+}

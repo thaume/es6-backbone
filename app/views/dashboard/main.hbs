@@ -1,0 +1,43 @@
+{{! This is the template that renders the main page of the application }}
+<div class="gr grsl">
+    <div class="gu gu-1of5 gu-m-1of1">
+        <div class="bx">
+            <h2 class="h-bx">{{t 'demo'}}</h2>
+            {{> info}}
+        </div>
+    </div>
+    <div class="gu gu-3of5 gu-m-3of5 gu-s-1of1">
+        <div class="bx {{#if error}}bx-alert bx-alert-error-form{{/if}}" id="container">
+            {{#if tweets}}
+                {{> comp/timeline/view}}
+                {{#push 'styles'}}
+                <style type="text/css">
+                    body {
+                        background-image: url({{../backgroundImageUrl}});
+                        background-attachment: fixed;
+                        background-repeat: repeat;
+                    }
+                </style>
+                {{/push}}
+            {{else}}
+                <div class="bx-alert-content">
+                    <p class="mbn">{{error}}</p>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+    {{#if screenName}}
+    <div class="gu gu-last">
+        <div class="bx">
+            <h2 class="h-bx">@{{screenName}}</h2>
+            {{#if profileImageUrl}}
+            <img src="{{profileImageUrl}}" alt="{{screenName}}" class="fluid-media">
+            {{/if}}
+        </div>
+    </div>
+    {{/if}}
+</div>
+
+{{#push "styles"}}
+<link rel='stylesheet' href="/styles/dashboard.css">
+{{/push}}

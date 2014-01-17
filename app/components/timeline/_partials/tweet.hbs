@@ -1,0 +1,22 @@
+{{! This template is available on the client and server as the partial comp.timeline.tweet (on the client, via the global object Viaduct.templates) }}
+<li class="tweet gr">
+    <div class="media">
+        <a class="img-left hide-s" href="https://www.twitter.com/{{user.screen_name}}">
+            <img class="media-object avatar" alt="{{user.screen_name}}" src="{{user.profile_image_url}}">
+        </a>
+        <div class="media-body">
+            <span class="tweet-header">
+                <span class="tweet-name"><a href="https://www.twitter.com/{{user.screen_name}}">{{user.name}}</a></span>
+                <span class="tweet-handle"><a
+                        href="https://www.twitter.com/{{user.screen_name}}">@{{user.screen_name}}</a></span>
+            </span>
+            <p class="tweet-content">
+                {{{formatTweet text entities}}}
+            </p>
+            <a href="https://www.twitter.com/{{user.screen_name}}/status/{{id}}" class="date" target="_blank">{{created_at}}</a>
+            <div class="tweet-utils">
+                <a href="https://twitter.com/intent/tweet?in_reply_to={{id}}" target="_blank"> {{t 'comp.timeline.reply'}}</a> · <a href="https://twitter.com/intent/retweet?tweet_id={{id}}" target="_blank"> {{t 'comp.timeline.retweet'}}</a> · <a href="https://twitter.com/intent/favorite?tweet_id={{id}}" target="_blank"> {{t 'comp.timeline.favorite'}}</a>
+            </div>
+        </div>
+    </div>
+</li>

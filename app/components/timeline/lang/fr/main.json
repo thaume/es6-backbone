@@ -1,0 +1,9 @@
+{
+  "fetch": "Afficher les anciens tweets",
+  "error": "Une erreur s'est produite",
+  "reply": "répondre",
+  "retweet": "retweeter",
+  "favorite": "favori",
+  "loading": "Chargement des tweets ... ",
+  "finished": "Fin du timeline"
+}

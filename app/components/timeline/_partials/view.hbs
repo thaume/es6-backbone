@@ -1,0 +1,23 @@
+{{! This template is available on the client and server as the partial comp.timeline.view (on the client, via the global object Viaduct.templates) }}
+<div data-type="timeline">
+    <div class="btn-loading tac"><span>{{t 'comp.timeline.loading'}}</span></div>
+    <div class="error hidden">
+        <div class="bx-alert bx-alert-error-form">
+            <div class="bx-alert-content">
+                <p class="mbn errorMsg">{{t 'comp.timeline.error'}}</p>
+            </div>
+        </div>
+    </div>
+    <ul class="unstyled timeline">
+        {{#each tweets}}
+        {{> comp/timeline/tweet }}
+        {{/each}}
+    </ul>
+    <div class="tac">
+        {{#if maxId}}
+        <a href="/tweets/load?maxId={{maxId}}" class="btn btn-primary btn-lead load">{{t 'comp.timeline.fetch'}}</a>
+        {{else}}
+        <div class="btn btn-primary btn-lead btn-disabled">{{t 'comp.timeline.finished'}}</div>
+        {{/if}}
+    </div>
+</div>
