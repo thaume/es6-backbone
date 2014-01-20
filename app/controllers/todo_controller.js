@@ -6,8 +6,7 @@
 var tetra = require('tetra'),
   controller = new tetra.locomotive.Controller();
 
-controller.index = function (data)
-{
+controller.index = function () {
   this.render();
 };
 

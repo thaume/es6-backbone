@@ -1,6 +1,3 @@
-/*global $ */
-/*jshint unused:false */
-
 import AppView from 'todo/views/app-view';
 
 (function() {
