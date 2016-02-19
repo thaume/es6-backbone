@@ -1,6 +1,7 @@
 # twitter-backbone-es6
 
 Author: thaume
+
 Email: tom.coquereau@gmail.com
 
 ## Launching server
